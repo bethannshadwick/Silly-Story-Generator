@@ -6,6 +6,7 @@ var story = document.querySelector('.story');
 
 function randomValueFromArray(array){
   return array[Math.floor(Math.random()*array.length)];
+  return array[random];
 }
 
 2. RAW TEXT STRINGS
@@ -43,7 +44,7 @@ function result() {
 
   if(customName.value !== '') {
     var name = customName.value;
-    newStory= newStory.replace('Bob', customName);
+    newStory= newStory.replace('Bob', name);
   }
 
   if(document.getElementById("uk").checked) {
